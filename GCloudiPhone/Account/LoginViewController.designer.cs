@@ -20,6 +20,14 @@ namespace GCloudiPhone
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel dt1 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel dt2 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton ForgotPasswordBtn { get; set; }
 
         [Outlet]
@@ -55,6 +63,16 @@ namespace GCloudiPhone
             if (CancelButton != null) {
                 CancelButton.Dispose ();
                 CancelButton = null;
+            }
+
+            if (dt1 != null) {
+                dt1.Dispose ();
+                dt1 = null;
+            }
+
+            if (dt2 != null) {
+                dt2.Dispose ();
+                dt2 = null;
             }
 
             if (ForgotPasswordBtn != null) {
