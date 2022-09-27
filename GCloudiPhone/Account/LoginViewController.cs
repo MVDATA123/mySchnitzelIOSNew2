@@ -53,6 +53,10 @@ namespace GCloudiPhone
             // storevalues.SetString(PasswordText.Text, "stringvalue");
             //Prenosimo vrednost passworda na WebShopViewController
             //CommonClass.value = PasswordText.Text;
+
+            this.NavigationController.SetNavigationBarHidden(true, true);
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
         }
 
         public override void ViewWillAppear(bool animated)

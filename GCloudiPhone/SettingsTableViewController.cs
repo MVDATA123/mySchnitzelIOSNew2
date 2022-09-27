@@ -80,7 +80,9 @@ namespace GCloudiPhone
 
         private void LogoutButton_TouchUpInside(object sender, EventArgs args)
         {
-            Logout();
+            //Logout();
+
+            PerformSegue("LoginSegue", this);
         }
 
         private void LoginButton_TouchUpInside(object sender, EventArgs args)
