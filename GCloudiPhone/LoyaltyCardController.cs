@@ -92,6 +92,9 @@ namespace GCloudiPhone
             //UINavigationBar.Appearance.BackgroundColor = UIColor.FromRGB(255, 205, 103);
             //NavigationItem.Title = "";
             this.NavigationController.SetNavigationBarHidden(true, true);
+
+            //this.NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            //this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
         }
 
         public override void ViewWillAppear(bool animated)

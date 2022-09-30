@@ -25,6 +25,19 @@ namespace GCloudiPhone
             View.EndEditing(true);
         }
 
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+
+
+            //this.NavigationController.SetNavigationBarHidden(true, true);
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            this.NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
+
+        }
+
         partial void SendButton_TouchUpInside(UIButton sender)
         {
             ToggleInputs();

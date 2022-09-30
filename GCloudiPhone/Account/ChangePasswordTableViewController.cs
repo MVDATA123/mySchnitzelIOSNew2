@@ -37,6 +37,19 @@ namespace GCloudiPhone
             //ChangePwTable.TableFooterView.BackgroundColor = UIColor.Clear;
             ChangePwTable.SectionFooterHeight = 0.0f;
             OldPwLabel.BecomeFirstResponder();
+           
+
+            //Sklanjamo linije izmedju redova u tabeli
+            ChangePwTable.SeparatorStyle = UITableViewCellSeparatorStyle.None;
+
+            //this.NavigationController.SetNavigationBarHidden(true, true);
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            //this.NavigationController.View.BackgroundColor = UIColor.Clear;
+            this.NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
+
+            ChangePwTable.BackgroundColor = UIColor.FromRGB(255, 205, 103);
 
             base.ViewDidLoad();
         }

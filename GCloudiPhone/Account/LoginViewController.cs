@@ -54,8 +54,12 @@ namespace GCloudiPhone
             //Prenosimo vrednost passworda na WebShopViewController
             //CommonClass.value = PasswordText.Text;
 
-            this.NavigationController.SetNavigationBarHidden(true, true);
+            //this.NavigationController.SetNavigationBarHidden(true, true);
             View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            //this.NavigationController.View.BackgroundColor = UIColor.Clear;
+            this.NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
 
         }
 

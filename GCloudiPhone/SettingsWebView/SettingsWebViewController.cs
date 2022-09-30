@@ -53,15 +53,15 @@ namespace GCloudiPhone
             switch (Type)
             {
                 case "TC":
-                    NavigationItem.Title = "AGBs";
+                    //NavigationItem.Title = "AGBs";
                     webView.LoadRequest(new NSUrlRequest(new NSUrl($@"{BaseUrlContainer.BaseUri}/Home/AGB?fullscreen=true")));
                     break;
                 case "Imprint":
-                    NavigationItem.Title = "Impressum";
+                    //NavigationItem.Title = "Impressum";
                     webView.LoadRequest(new NSUrlRequest(new NSUrl($@"{BaseUrlContainer.BaseUri}/Home/Impressum?fullscreen=true")));
                     break;
                 case "DataProtection":
-                    NavigationItem.Title = "Datenschutzhinweise";
+                    //NavigationItem.Title = "Datenschutzhinweise";
                     webView.LoadRequest(new NSUrlRequest(new NSUrl($@"{BaseUrlContainer.BaseUri}/Home/Datenschutzhinweise?fullscreen=true")));
                     break;
             }
