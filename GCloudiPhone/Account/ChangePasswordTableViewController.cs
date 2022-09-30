@@ -94,11 +94,11 @@ namespace GCloudiPhone
             return true;
         }
 
-        partial void ChangePwBtn_Activated(UIBarButtonItem sender)
-        {
-            ToggleInput();
-            ChangePassword();
-        }
+        //partial void ChangePwBtn_Activated(UIBarButtonItem sender)
+        //{
+        //    ToggleInput();
+        //    ChangePassword();
+        //}
 
         private void DismissKeyboard()
         {
@@ -207,5 +207,13 @@ namespace GCloudiPhone
 
             return true;
         }
+
+        partial void ChangePwBtn2_Action(UIButton sender)
+        {
+            ToggleInput();
+            ChangePassword();
+        }
+
+       
     }
 }

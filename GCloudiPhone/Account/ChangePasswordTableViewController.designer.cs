@@ -16,7 +16,7 @@ namespace GCloudiPhone
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIBarButtonItem ChangePwBtn { get; set; }
+        UIKit.UIButton ChangePwBtn { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -34,9 +34,9 @@ namespace GCloudiPhone
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField OldPwLabel { get; set; }
 
-        [Action ("ChangePwBtn_Activated:")]
+        [Action ("ChangePwBtn2_Action:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void ChangePwBtn_Activated (UIKit.UIBarButtonItem sender);
+        partial void ChangePwBtn2_Action (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
