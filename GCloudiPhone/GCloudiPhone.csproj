@@ -374,10 +374,6 @@
     <Compile Include="SpecialProductsController.designer.cs">
       <DependentUpon>SpecialProductsController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Account\RegisterTableViewController.cs" />
-    <Compile Include="Account\RegisterTableViewController.designer.cs">
-      <DependentUpon>RegisterTableViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="OnlineShopController.cs" />
     <Compile Include="OnlineShopController.designer.cs">
       <DependentUpon>OnlineShopController.cs</DependentUpon>
@@ -402,6 +398,10 @@
     <Compile Include="OnlineShopNavigationController.cs" />
     <Compile Include="OnlineShopNavigationController.designer.cs">
       <DependentUpon>OnlineShopNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashback\RegisterTableViewController.cs" />
+    <Compile Include="Cashback\RegisterTableViewController.designer.cs">
+      <DependentUpon>RegisterTableViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
