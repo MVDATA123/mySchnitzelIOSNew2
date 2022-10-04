@@ -44,6 +44,18 @@ namespace GCloudiPhone
             ShadowView.Layer.ShadowOpacity = 0.5f;
             ShadowView.Layer.ShadowRadius = 5.0f;
 
+           
+
+            //this.NavigationController.SetNavigationBarHidden(true, true);
+            //NavigationController.NavigationBar.BackgroundColor = UIColor.Clear;
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            //this.NavigationController.View.BackgroundColor = UIColor.Clear;
+            //this.NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            //this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
+
+          
+
             base.ViewDidLoad();
         }
 

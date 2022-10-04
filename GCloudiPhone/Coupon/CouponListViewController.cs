@@ -83,6 +83,8 @@ namespace GCloudiPhone
             this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
 
             CouponList.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            
         }
 
         public override void ViewWillAppear(bool animated)
@@ -91,7 +93,13 @@ namespace GCloudiPhone
 
             //Fiksni naziv radnje
             //NavigationItem.Title = "Eisenstadt";
-            NavigationItem.Title = "";
+
+
+            NavigationItem.Title = "Punkte einlösen";
+            UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
+            {
+                Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
+            };
 
             //var cashbackBtn = new UIBarButtonItem(UIImage.FromBundle("CashbackIcon"), UIBarButtonItemStyle.Plain, (sender, e) => PerformSegue("CashbackSegue", this));
             //NavigationItem.SetRightBarButtonItems(new UIBarButtonItem[] { cashbackBtn }, true);
