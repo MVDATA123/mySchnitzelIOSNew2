@@ -70,19 +70,33 @@ namespace GCloudiPhone
             //    search.SearchBar.SizeToFit();
             //    CouponList.TableHeaderView = search.SearchBar;
             //}
+
+            //Sklanjamo linije izmedju redova u tabeli
+            CouponList.SeparatorStyle = UITableViewCellSeparatorStyle.None;
+
+            //this.NavigationController.SetNavigationBarHidden(true, true);
+            NavigationController.NavigationBar.BackgroundColor = UIColor.Clear;
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            //this.NavigationController.View.BackgroundColor = UIColor.Clear;
+            //this.NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
+
+            CouponList.BackgroundColor = UIColor.FromRGB(255, 205, 103);
         }
 
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
 
-                //Fiksni naziv radnje
-                NavigationItem.Title = "Eisenstadt";
+            //Fiksni naziv radnje
+            //NavigationItem.Title = "Eisenstadt";
+            NavigationItem.Title = "";
 
-                //var cashbackBtn = new UIBarButtonItem(UIImage.FromBundle("CashbackIcon"), UIBarButtonItemStyle.Plain, (sender, e) => PerformSegue("CashbackSegue", this));
-                //NavigationItem.SetRightBarButtonItems(new UIBarButtonItem[] { cashbackBtn }, true);
-                //NavigationItem.SetLeftBarButtonItem(null, true);
-            
+            //var cashbackBtn = new UIBarButtonItem(UIImage.FromBundle("CashbackIcon"), UIBarButtonItemStyle.Plain, (sender, e) => PerformSegue("CashbackSegue", this));
+            //NavigationItem.SetRightBarButtonItems(new UIBarButtonItem[] { cashbackBtn }, true);
+            //NavigationItem.SetLeftBarButtonItem(null, true);
+
 
             if (((AppDelegate)UIApplication.SharedApplication.Delegate).AuthState == AuthState.Unauthorized)
             {

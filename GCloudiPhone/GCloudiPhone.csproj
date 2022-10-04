@@ -852,6 +852,8 @@
     <ImageAsset Include="Images.xcassets\Aktionen.imageset\medal.png" />
     <ImageAsset Include="Images.xcassets\SettingsNew.imageset\Contents.json" />
     <ImageAsset Include="Images.xcassets\SettingsNew.imageset\sett.png" />
+    <ImageAsset Include="Images.xcassets\StartUp.imageset\Contents.json" />
+    <ImageAsset Include="Images.xcassets\StartUp.imageset\MySchnitzelLogo.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GCloud.Shared\GCloud.Shared.csproj">
@@ -990,6 +992,7 @@
     <Folder Include="Images.xcassets\Standorte.imageset\" />
     <Folder Include="Images.xcassets\WelcommeMessage.imageset\" />
     <Folder Include="Images.xcassets\SettingsNew.imageset\" />
+    <Folder Include="Images.xcassets\StartUp.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="GoogleService-Info.plist" />

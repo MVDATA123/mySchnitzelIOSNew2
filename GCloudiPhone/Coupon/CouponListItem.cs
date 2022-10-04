@@ -115,18 +115,18 @@ namespace GCloudiPhone
             switch (coupon.CouponType)
             {
                 case CouponTypeDto.Value:
-                    CouponValue.Text = $@"Wert: {coupon.Value.ToString("C", cultureInfo)}";
+                    CouponValue.Text = $@"{coupon.Value.ToString("C", cultureInfo)}";
                     break;
                 case CouponTypeDto.Percent:
-                    CouponValue.Text = $@"Wert: {(coupon.Value / 100).ToString("P", cultureInfo)}";
+                    CouponValue.Text = $@"{(coupon.Value / 100).ToString("P", cultureInfo)}";
                     break;
                 case CouponTypeDto.Points:
-                    CouponValue.Text = $@"Wert: {(coupon.Value).ToString()}"+" Punkte";
+                    CouponValue.Text = $@"{(coupon.Value).ToString()}"+" Punkte";
                     break;
                 case CouponTypeDto.SpecialProductPoints:
                     if(Convert.ToInt32(totalPointsNew) > coupon.Value )
                     {
-                        CouponValue.Text = $@"Wert: {(coupon.Value).ToString()}" + " Punkte";
+                        CouponValue.Text = $@"{(coupon.Value).ToString()}" + " Punkte";
                     }
                     else
                     {

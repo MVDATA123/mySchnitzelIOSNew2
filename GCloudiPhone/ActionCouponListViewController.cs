@@ -77,7 +77,8 @@ namespace GCloudiPhone
             base.ViewWillAppear(animated);
 
             //Fiksni naziv radnje
-            NavigationItem.Title = "Eisenstadt";
+            //NavigationItem.Title = "Eisenstadt";
+            NavigationItem.Title = "";
 
             //var cashbackBtn = new UIBarButtonItem(UIImage.FromBundle("CashbackIcon"), UIBarButtonItemStyle.Plain, (sender, e) => PerformSegue("CashbackSegue", this));
             //NavigationItem.SetRightBarButtonItems(new UIBarButtonItem[] { cashbackBtn }, true);

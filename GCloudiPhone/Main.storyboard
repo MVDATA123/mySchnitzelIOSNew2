@@ -557,7 +557,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adresse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="40370">
-                                            <rect key="frame" x="16" y="50" width="253" height="21"/>
+                                            <rect key="frame" x="16" y="50" width="251" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <color key="textColor" white="0.66666666666666696" alpha="1" colorSpace="calibratedWhite"/>
@@ -764,7 +764,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adresse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="40387">
-                                                    <rect key="frame" x="15" y="50" width="182.5" height="21"/>
+                                                    <rect key="frame" x="15" y="50" width="180.5" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" white="0.66666666666666696" alpha="1" colorSpace="calibratedWhite"/>
@@ -838,7 +838,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wert: 5,00 €" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97847">
-                                                            <rect key="frame" x="60" y="28" width="159.5" height="21"/>
+                                                            <rect key="frame" x="60" y="28" width="157.5" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <nil key="highlightedColor"/>
@@ -1094,7 +1094,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
-                                                        <segue id="555385" destination="65110" kind="show"/>
+                                                        <segue destination="65110" kind="show" id="555385"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1194,7 +1194,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Datenschutz annehmen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="284174">
-                                                    <rect key="frame" x="39" y="12" width="302" height="19"/>
+                                                    <rect key="frame" x="39" y="12" width="300" height="19"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1215,7 +1215,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGB’s annehmen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="408480" fixedFrame="YES">
-                                                    <rect key="frame" x="39" y="12" width="198" height="19"/>
+                                                    <rect key="frame" x="39" y="12" width="196" height="19"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1236,7 +1236,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impressum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="408481" fixedFrame="YES">
-                                                    <rect key="frame" x="39" y="11" width="136" height="22"/>
+                                                    <rect key="frame" x="39" y="11" width="134" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1377,7 +1377,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="44414">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CouponRow" editingAccessoryType="disclosureIndicator" rowHeight="75" id="44427" customClass="CouponListItem">
                                 <rect key="frame" x="0.0" y="28" width="414" height="75"/>
@@ -1403,7 +1403,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wert: 5,00 €" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44437">
-                                            <rect key="frame" x="75" y="49" width="165" height="21"/>
+                                            <rect key="frame" x="75" y="49" width="163" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <nil key="textColor"/>
@@ -1440,6 +1440,8 @@
                             <outlet property="dataSource" destination="44412" id="44415"/>
                             <outlet property="delegate" destination="44412" id="44416"/>
                         </connections>
+                        <color key="backgroundColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0" alpha="0"/>
+                        <color key="separatorColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0" alpha="0"/>
                     </tableView>
                     <navigationItem key="navigationItem" title="Gutscheine" id="44413"/>
                     <connections>
@@ -2449,7 +2451,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wert: 5,00 €" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="178181">
-                                                    <rect key="frame" x="75" y="49" width="152.5" height="21"/>
+                                                    <rect key="frame" x="75" y="49" width="150.5" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
@@ -2659,35 +2661,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dashboard-Image-5" translatesAutoresizingMaskIntoConstraints="NO" id="260228">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="258370">
-                                <rect key="frame" x="83" y="174.5" width="250" height="250"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="258870">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemOrangeColor"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Copyright © 2018 MV Data Datenverarbeitung Ges.m.b.H." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="260164" misplaced="YES">
+                                <rect key="frame" x="8" y="856" width="398" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="StartUp" translatesAutoresizingMaskIntoConstraints="NO" id="258370" misplaced="YES">
+                                <rect key="frame" x="82" y="598" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="258702"/>
                                     <constraint firstAttribute="width" constant="250" id="258709"/>
                                 </constraints>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="258870">
-                                <rect key="frame" x="188.5" y="440.5" width="37" height="37"/>
-                            </activityIndicatorView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copyright © 2018 MV Data Datenverarbeitung Ges.m.b.H." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="260164">
-                                <rect key="frame" x="8" y="856" width="398" height="20"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U2W-FP-BIS"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="258370" firstAttribute="centerX" secondItem="U2W-FP-BIS" secondAttribute="centerX" constant="1" id="258748"/>
-                            <constraint firstItem="258370" firstAttribute="centerY" secondItem="258094" secondAttribute="bottom" multiplier="1/3" constant="1" id="258749"/>
-                            <constraint firstItem="258870" firstAttribute="top" secondItem="258370" secondAttribute="bottom" constant="16" id="258889"/>
-                            <constraint firstItem="258870" firstAttribute="centerX" secondItem="U2W-FP-BIS" secondAttribute="centerX" id="258896"/>
+                            <constraint firstItem="258870" firstAttribute="centerX" secondItem="258094" secondAttribute="centerX" id="E4N-e3-oeR"/>
+                            <constraint firstItem="260164" firstAttribute="top" secondItem="258370" secondAttribute="bottom" constant="20" id="Kg9-NH-Qwq"/>
+                            <constraint firstItem="258870" firstAttribute="centerY" secondItem="258094" secondAttribute="centerY" id="q4e-XM-JCv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2776,7 +2773,7 @@
             </objects>
             <point key="canvasLocation" x="-1022" y="-2581"/>
         </scene>
-        <!--Details-->
+        <!--Invoice Details View Controller-->
         <scene sceneID="TaE-vh-eMZ">
             <objects>
                 <viewController storyboardIdentifier="InvoiceDetailsViewController" id="syb-OL-8sa" customClass="InvoiceDetailsViewController" sceneMemberID="viewController">
@@ -3703,7 +3700,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wert: 5,00 €" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="434437">
-                                            <rect key="frame" x="75" y="49" width="165" height="21"/>
+                                            <rect key="frame" x="75" y="49" width="163" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <nil key="textColor"/>
@@ -3792,6 +3789,7 @@
         <segue reference="218532"/>
         <segue reference="409849"/>
         <segue reference="2y3-c4-vIn"/>
+        <segue reference="65156"/>
         <segue reference="47466"/>
         <segue reference="107024"/>
         <segue reference="440792"/>
@@ -3801,7 +3799,6 @@
         <image name="Aktionen" width="838" height="583"/>
         <image name="ArrowLeftIcon" width="25" height="25"/>
         <image name="ArrowRightIcon" width="25" height="25"/>
-        <image name="Dashboard-Image-5" width="500" height="500"/>
         <image name="E-BillIconColored" width="48" height="48"/>
         <image name="FocusOnUserIcon" width="25" height="25"/>
         <image name="FollowIcon" width="25" height="25"/>
@@ -3822,6 +3819,7 @@
         <image name="ShareIcon" width="512" height="512"/>
         <image name="Speisekarte" width="838" height="581"/>
         <image name="Standorte" width="838" height="581"/>
+        <image name="StartUp" width="437" height="159"/>
         <image name="StoreIconFilledTall" width="55" height="55"/>
         <image name="WelcommeMessage" width="1210" height="160"/>
         <image name="eBillIcon" width="25" height="25"/>
@@ -3834,6 +3832,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
