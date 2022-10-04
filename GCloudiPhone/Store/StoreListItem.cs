@@ -28,7 +28,7 @@ namespace GCloudiPhone
         public void SetCellData(StoreLocationDto store, bool showDistance = true)
         {
             Store = store;
-            StoreName.Text = store.Name;
+            StoreName.Text = " - " + store.Name;
             CompanyName.Text = store.Company.Name;
             CompanyName.Hidden = false;
             AddressLabel.Text = store.Address;

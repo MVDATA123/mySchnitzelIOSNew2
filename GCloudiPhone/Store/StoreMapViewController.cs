@@ -113,8 +113,20 @@ namespace GCloudiPhone
             FindSegmentControl.RemoveFromSuperview();
             //StoreMapView.Add(storeListBlurEffectView);
             StoreMapView.Add(StoreTableView);
-            
-            
+
+
+            //Sklanjamo linije izmedju redova u tabeli
+            StoreTableView.SeparatorStyle = UITableViewCellSeparatorStyle.None;
+
+            //this.NavigationController.SetNavigationBarHidden(true, true);
+            NavigationController.NavigationBar.BackgroundColor = UIColor.Clear;
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            //this.NavigationController.View.BackgroundColor = UIColor.Clear;
+            //this.NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
+
+            StoreTableView.BackgroundColor = UIColor.FromRGB(255, 205, 103);
 
             //NavigationItem.TitleView = FindSegmentControl;
 

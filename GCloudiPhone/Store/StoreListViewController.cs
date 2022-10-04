@@ -40,6 +40,20 @@ namespace GCloudiPhone
         {
             base.ViewDidLoad();
 
+
+            //Sklanjamo linije izmedju redova u tabeli
+            StoreList.SeparatorStyle = UITableViewCellSeparatorStyle.None;
+
+            //this.NavigationController.SetNavigationBarHidden(true, true);
+            NavigationController.NavigationBar.BackgroundColor = UIColor.Clear;
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            //this.NavigationController.View.BackgroundColor = UIColor.Clear;
+            //this.NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
+
+            StoreList.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
             tableSource = new StoreTableSource(_stores, true);
             tableViewRef = new WeakReference<UITableView>(StoreList);
             StoreList.Source = tableSource;
