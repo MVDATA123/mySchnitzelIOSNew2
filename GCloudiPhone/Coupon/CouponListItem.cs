@@ -26,6 +26,7 @@ namespace GCloudiPhone
             _authService = RestService.For<IAuthService>(HttpClientContainer.Instance.HttpClient);
         }
 
+
         public CouponListItem()
         {
             //SetCellData(coupon);
@@ -38,6 +39,7 @@ namespace GCloudiPhone
 
         public void SetCellData(CouponDto coupon)
         {
+            
             Coupon = coupon;
             //CouponRedeemsLeft.TextColor = UIColor.LightGray;
             //Accessory = UITableViewCellAccessory.DisclosureIndicator;

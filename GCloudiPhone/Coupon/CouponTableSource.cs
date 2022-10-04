@@ -38,6 +38,16 @@ namespace GCloudiPhone
             var item = TableItems[indexPath.Row];
             var cell = (CouponListItem)tableView.DequeueReusableCell("CouponRow", indexPath);
 
+            //cell.BackgroundColor = Resources.XDarkGrayColor;
+            //cell.TextLabel.TextColor = Resources.XWhiteColor;
+            cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
+            cell.Layer.ShadowColor = UIColor.LightGray.CGColor;
+            cell.Layer.BorderColor = UIColor.LightGray.CGColor;
+            cell.Layer.BorderWidth = 2.0f;
+            cell.Layer.CornerRadius = 5.0f;
+            cell.Layer.ShadowRadius = 2.0f;
+            cell.Layer.ShadowOpacity = 0.75f;
+
             //---- if there are no cells to reuse, create a new one
             if (cell == null)
             { cell = new CouponListItem(); }
