@@ -37,7 +37,7 @@ namespace GCloudiPhone
             //Sklanjamo linije izmedju redova u tabeli
             SettingsTable.SeparatorStyle = UITableViewCellSeparatorStyle.None;
 
-            this.NavigationController.SetNavigationBarHidden(true, true);
+            //this.NavigationController.SetNavigationBarHidden(true, true);
             View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
 
             //this.NavigationController.View.BackgroundColor = UIColor.Clear;
@@ -56,27 +56,27 @@ namespace GCloudiPhone
 
             if (((AppDelegate)UIApplication.SharedApplication.Delegate).AuthState == AuthState.Unauthorized)
             {
-                ChangePasswordCell.UserInteractionEnabled = false;
+                //ChangePasswordCell.UserInteractionEnabled = false;
                 LoginButton.TouchUpInside += LoginButton_TouchUpInside;
                 LogoutCell.AddSubview(LoginButton);
                 EmailLabel.Text = "";
                 //UsernameLabel.Text = "Hier werden Kontodetails angezeigt";
-                ChangePasswordCell.Accessory = UITableViewCellAccessory.None;
-                ChangePasswordLabel.TextColor = UIColor.LightGray;
+                //ChangePasswordCell.Accessory = UITableViewCellAccessory.None;
+                //ChangePasswordLabel.TextColor = UIColor.LightGray;
                 //UsernameLabel.TextColor = UIColor.LightGray;
                 InvitationCodeLabel.Text = "Einladungs-Code: N/A";
                 
             }
             else
             {
-                ChangePasswordCell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
-                ChangePasswordLabel.TextColor = UIColor.Black;
+                //ChangePasswordCell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
+                //ChangePasswordLabel.TextColor = UIColor.Black;
                 //UsernameLabel.TextColor = UIColor.Black;
                 var user = _userRepository.GetCurrentUser();
                 //UsernameLabel.Text = user.Username;
                 //UsernameLabel.Text = "Benutzer";
                 EmailLabel.Text = user.Email;
-                ChangePasswordCell.UserInteractionEnabled = true;
+                //ChangePasswordCell.UserInteractionEnabled = true;
                 LogoutButton.TouchUpInside += LogoutButton_TouchUpInside;
                 LogoutCell.AddSubview(LogoutButton);
                 InvitationCodeLabel.Text = user.InvitationCode;

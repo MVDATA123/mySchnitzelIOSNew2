@@ -20,10 +20,6 @@ namespace GCloudiPhone
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel ChangePasswordLabel { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton EBill { get; set; }
 
         [Outlet]
@@ -67,11 +63,6 @@ namespace GCloudiPhone
             if (ChangePasswordCell != null) {
                 ChangePasswordCell.Dispose ();
                 ChangePasswordCell = null;
-            }
-
-            if (ChangePasswordLabel != null) {
-                ChangePasswordLabel.Dispose ();
-                ChangePasswordLabel = null;
             }
 
             if (EBill != null) {
