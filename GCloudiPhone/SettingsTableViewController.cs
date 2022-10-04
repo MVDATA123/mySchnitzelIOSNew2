@@ -37,7 +37,7 @@ namespace GCloudiPhone
             //Sklanjamo linije izmedju redova u tabeli
             SettingsTable.SeparatorStyle = UITableViewCellSeparatorStyle.None;
 
-            //this.NavigationController.SetNavigationBarHidden(true, true);
+            this.NavigationController.SetNavigationBarHidden(true, true);
             View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
 
             //this.NavigationController.View.BackgroundColor = UIColor.Clear;
