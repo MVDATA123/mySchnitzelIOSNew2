@@ -34,7 +34,7 @@ namespace GCloudiPhone
             Delegate = new CustomUITabBarControllerDelegate();
 
 
-            //UITabBar.Appearance.SelectedImageTintColor = new UIColor(90 / 255f, 36 / 255f, 191 / 255f, 1.0f);
+            UITabBar.Appearance.SelectedImageTintColor = UIColor.FromRGB(255, 205, 103);
             //UITabBar.Appearance.TintColor = new UIColor(90 / 255f, 36 / 255f, 191 / 255f, 1.0f);
             //UITabBar.Appearance.BarTintColor = new UIColor(245 / 255f, 246 / 255f, 247 / 255f, 1.0f);
 
@@ -43,6 +43,8 @@ namespace GCloudiPhone
             //Promena ikonice na tab bar-u, ne mora da se radi na ovaj nacin jer se
             //ikonice mogu dodati i pomocu storyboarda
             //TabBar.Items[1].Image = GetTabIcon(UITabBarSystemItem.Bookmarks);
+
+            //View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
         }
 
         private UIImage GetTabIcon(UITabBarSystemItem systemItem)

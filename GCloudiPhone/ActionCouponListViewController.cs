@@ -91,7 +91,13 @@ namespace GCloudiPhone
 
             //Fiksni naziv radnje
             //NavigationItem.Title = "Eisenstadt";
-            NavigationItem.Title = "";
+            //NavigationItem.Title = "";
+
+            NavigationItem.Title = "Aktuelle Aktionen";
+            UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
+            {
+                Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
+            };
 
             //var cashbackBtn = new UIBarButtonItem(UIImage.FromBundle("CashbackIcon"), UIBarButtonItemStyle.Plain, (sender, e) => PerformSegue("CashbackSegue", this));
             //NavigationItem.SetRightBarButtonItems(new UIBarButtonItem[] { cashbackBtn }, true);
