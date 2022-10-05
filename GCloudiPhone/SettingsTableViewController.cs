@@ -51,6 +51,12 @@ namespace GCloudiPhone
         {
             base.ViewWillAppear(animated);
 
+            NavigationItem.Title = "Einstellungen";
+            UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
+            {
+                Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
+            };
+
             LoginButton.RemoveFromSuperview();
             LogoutButton.RemoveFromSuperview();
 
