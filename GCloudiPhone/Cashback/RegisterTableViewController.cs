@@ -14,6 +14,7 @@ using GCloudShared.Shared;
 using Newtonsoft.Json;
 using Refit;
 using UIKit;
+using Xamarin.Essentials;
 
 namespace GCloudiPhone
 {
@@ -29,6 +30,9 @@ namespace GCloudiPhone
         private IWebShopService webShopService;
 
         private RegisterToWebShopResult registerToWebShopResult;
+
+        private string agbValue;
+        private string dataProtectionValue;
 
         public RegisterTableViewController(IntPtr handle) : base(handle)
         {
@@ -75,7 +79,11 @@ namespace GCloudiPhone
             base.ViewWillAppear(animated);
 
             expandedPaths = new List<NSIndexPath>();
+
+          
         }
+
+      
 
         public override void ViewDidLoad()
         {
@@ -114,7 +122,93 @@ namespace GCloudiPhone
             this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
 
             RegisterTable.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            agbValue = Preferences.Get("agbValuePreferences", "no_AGB");
+            dataProtectionValue = Preferences.Get("dataProtectionValuePreferences", "no_DataProtection");
+
+            if (agbValue == "no_AGB")
+            {
+                switchAgb.Enabled = true;
+                agbValue = "AGB_Checked";
+            }
+            else
+            {
+                switchAgb.Enabled = false;
+                agbValue = "no_AGB";
+            }
+
+            switchAgb.ValueChanged += SwitchAgb_ValueChanged;
+
+            if (dataProtectionValue == "no_DataProtection")
+            {
+                switchDataProtection.Enabled = true;
+                dataProtectionValue = "DataProtection_Checked";
+            }
+            else
+            {
+                switchDataProtection.Enabled = false;
+                dataProtectionValue = "no_DataProtection";
+            }
+
+            switchDataProtection.ValueChanged += SwitchDataProtection_ValueChanged;
+
         }
+
+        partial void switchAgbChanged(UISwitch sender)
+        {
+
+            ////var value = switchAgb.On;
+            //if (switchAgb.On == true)
+            //{
+            //    Preferences.Set("agbValuePreferences", "AGB_Checked");
+            //}
+            //else
+            //{
+            //    Preferences.Set("agbValuePreferences", "no_AGB");
+            //}
+            //agbValue = Preferences.Get("agbValuePreferences", "123");
+        }
+
+        partial void switchDataProtectionChanged(UISwitch sender)
+        {
+            //if (switchDataProtection.On == true)
+            //{
+            //    Preferences.Set("dataProtectionValuePreferences", "DataProtection_Checked");
+            //}
+            //else
+            //{
+            //    Preferences.Set("dataProtectionValuePreferences", "no_DataProtection");
+            //}
+            //dataProtectionValue = Preferences.Get("dataProtectionValuePreferences", "no_DataProtection");
+        }
+
+        private void SwitchAgb_ValueChanged(object sender, EventArgs e)
+        {
+            if (switchAgb.On == true)
+            {
+                Preferences.Set("agbValuePreferences", "AGB_Checked");
+            }
+            else
+            {
+                Preferences.Set("agbValuePreferences", "no_AGB");
+            }
+            agbValue = Preferences.Get("agbValuePreferences", "no_AGB");
+        }
+
+        private void SwitchDataProtection_ValueChanged(object sender, EventArgs e)
+        {
+            if (switchDataProtection.On == true)
+            {
+                Preferences.Set("dataProtectionValuePreferences", "DataProtection_Checked");
+            }
+            else
+            {
+                Preferences.Set("dataProtectionValuePreferences", "no_DataProtection");
+            }
+            dataProtectionValue = Preferences.Get("dataProtectionValuePreferences", "no_DataProtection");
+        }
+
+
 
         public override void ViewDidAppear(bool animated)
         {
@@ -301,6 +395,67 @@ namespace GCloudiPhone
                     return;
                 }
 
+                var x = agbValue;
+                var y = dataProtectionValue;
+                if (agbValue == "no_AGB")
+                {
+                    ////Create Alert
+                    //var okAlertController = UIAlertController.Create("AGB", "musst du prüfen", UIAlertControllerStyle.Alert);
+
+                    ////Add Action
+                    //okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+
+                    //// Present Alert
+                    //PresentViewController(okAlertController, true, null);
+
+                    //ToggleInput();
+
+                    InvokeOnMainThread(() =>
+                    {
+                        var alert = UIAlertController.Create("AGB", "Sie müssen den Allgemeinen Geschäftsbedingungen zustimmen", UIAlertControllerStyle.Alert);
+                        alert.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Cancel, action =>
+                        {
+                            NavigationController.PopViewController(true);
+                            alert.Dispose();
+                        }));
+                        PresentViewController(alert, true, null);
+                        ToggleInput();
+                    });
+
+                    return;
+
+                }
+                if (dataProtectionValue == "no_DataProtection")
+                {
+                    ////Create Alert
+                    //var okAlertController = UIAlertController.Create("Datenschutz", "musst du prüfen", UIAlertControllerStyle.Alert);
+
+                    ////Add Action
+                    //okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+
+                    //// Present Alert
+                    //PresentViewController(okAlertController, true, null);
+
+                    //ToggleInput();
+
+                    InvokeOnMainThread(() =>
+                    {
+                        var alert = UIAlertController.Create("Datenschutz", "Sie müssen dem Datenschutz zustimmen", UIAlertControllerStyle.Alert);
+                        alert.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Cancel, action =>
+                        {
+                            NavigationController.PopViewController(true);
+                            alert.Dispose();
+                        }));
+                        PresentViewController(alert, true, null);
+                        ToggleInput();
+                    });
+
+                    return;
+
+
+                }
+
+
                 //bool isInvitationCodeValid = _authService.IsInvitationCodeAvailable(TxtInvitationCode.Text).Result;
                 //if (!isInvitationCodeValid)
                 //{
@@ -398,6 +553,7 @@ namespace GCloudiPhone
             var isValid = true;
             RegisterTable.BeginUpdates();
 
+           
             //if (string.IsNullOrWhiteSpace(UsernameText.Text.Trim()))
             //{
             //    isValid = false;
@@ -514,5 +670,7 @@ namespace GCloudiPhone
             return new string(Enumerable.Repeat(chars, length)
                 .Select(s => s[random.Next(s.Length)]).ToArray());
         }
+
+     
     }
 }

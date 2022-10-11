@@ -2032,6 +2032,9 @@
                                                     <rect key="frame" x="335" y="6" width="51" height="31"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="onTintColor" red="0.10980392156862745" green="0.38039215686274508" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switchDataProtectionChanged:" destination="70913" id="563580" eventType="valueChanged"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -2061,6 +2064,9 @@
                                                     <rect key="frame" x="335" y="6" width="51" height="31"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="onTintColor" red="0.10980392156862745" green="0.38039215686274508" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switchAgbChanged:" destination="70913" id="561714" eventType="valueChanged"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -2133,6 +2139,8 @@
                         <outlet property="RegisterButton" destination="71624" id="name-outlet-71624"/>
                         <outlet property="RegisterTable" destination="70914" id="name-outlet-70914"/>
                         <outlet property="TxtInvitationCode" destination="295175" id="name-outlet-295175"/>
+                        <outlet property="switchAgb" destination="517547" id="name-outlet-517547"/>
+                        <outlet property="switchDataProtection" destination="517546" id="name-outlet-517546"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70919" userLabel="First Responder" sceneMemberID="firstResponder"/>

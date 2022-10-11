@@ -11,122 +11,137 @@ using UIKit;
 
 namespace GCloudiPhone
 {
-    [Register("RegisterTableViewController")]
+    [Register ("RegisterTableViewController")]
     partial class RegisterTableViewController
     {
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField BirthDateTextField { get; set; }
 
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableViewCell EmailCell { get; set; }
 
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField EmailTextField { get; set; }
 
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIActivityIndicatorView LoadingIndicator { get; set; }
 
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField PasswdRepeatTextField { get; set; }
 
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableViewCell PasswordCell { get; set; }
 
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableViewCell PasswordRepeatCell { get; set; }
 
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField PasswordTextField { get; set; }
 
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton RegisterButton { get; set; }
 
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView RegisterTable { get; set; }
 
         [Outlet]
-        [GeneratedCode("iOS Designer", "1.0")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UISwitch switchAgb { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UISwitch switchDataProtection { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField TxtInvitationCode { get; set; }
 
-        [Action("RegisterButton_TouchUpInside:")]
-        [GeneratedCode("iOS Designer", "1.0")]
-        partial void RegisterButton_TouchUpInside(UIKit.UIButton sender);
+        [Action ("RegisterButton_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void RegisterButton_TouchUpInside (UIKit.UIButton sender);
 
-        void ReleaseDesignerOutlets()
+        [Action ("switchAgbChanged:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void switchAgbChanged (UIKit.UISwitch sender);
+
+        [Action ("switchDataProtectionChanged:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void switchDataProtectionChanged (UIKit.UISwitch sender);
+
+        void ReleaseDesignerOutlets ()
         {
-            if (BirthDateTextField != null)
-            {
-                BirthDateTextField.Dispose();
+            if (BirthDateTextField != null) {
+                BirthDateTextField.Dispose ();
                 BirthDateTextField = null;
             }
 
-            if (EmailCell != null)
-            {
-                EmailCell.Dispose();
+            if (EmailCell != null) {
+                EmailCell.Dispose ();
                 EmailCell = null;
             }
 
-            if (EmailTextField != null)
-            {
-                EmailTextField.Dispose();
+            if (EmailTextField != null) {
+                EmailTextField.Dispose ();
                 EmailTextField = null;
             }
 
-            if (LoadingIndicator != null)
-            {
-                LoadingIndicator.Dispose();
+            if (LoadingIndicator != null) {
+                LoadingIndicator.Dispose ();
                 LoadingIndicator = null;
             }
 
-            if (PasswdRepeatTextField != null)
-            {
-                PasswdRepeatTextField.Dispose();
+            if (PasswdRepeatTextField != null) {
+                PasswdRepeatTextField.Dispose ();
                 PasswdRepeatTextField = null;
             }
 
-            if (PasswordCell != null)
-            {
-                PasswordCell.Dispose();
+            if (PasswordCell != null) {
+                PasswordCell.Dispose ();
                 PasswordCell = null;
             }
 
-            if (PasswordRepeatCell != null)
-            {
-                PasswordRepeatCell.Dispose();
+            if (PasswordRepeatCell != null) {
+                PasswordRepeatCell.Dispose ();
                 PasswordRepeatCell = null;
             }
 
-            if (PasswordTextField != null)
-            {
-                PasswordTextField.Dispose();
+            if (PasswordTextField != null) {
+                PasswordTextField.Dispose ();
                 PasswordTextField = null;
             }
 
-            if (RegisterButton != null)
-            {
-                RegisterButton.Dispose();
+            if (RegisterButton != null) {
+                RegisterButton.Dispose ();
                 RegisterButton = null;
             }
 
-            if (RegisterTable != null)
-            {
-                RegisterTable.Dispose();
+            if (RegisterTable != null) {
+                RegisterTable.Dispose ();
                 RegisterTable = null;
             }
 
-            if (TxtInvitationCode != null)
-            {
-                TxtInvitationCode.Dispose();
+            if (switchAgb != null) {
+                switchAgb.Dispose ();
+                switchAgb = null;
+            }
+
+            if (switchDataProtection != null) {
+                switchDataProtection.Dispose ();
+                switchDataProtection = null;
+            }
+
+            if (TxtInvitationCode != null) {
+                TxtInvitationCode.Dispose ();
                 TxtInvitationCode = null;
             }
         }
