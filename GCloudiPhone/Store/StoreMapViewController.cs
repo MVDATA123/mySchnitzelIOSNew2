@@ -199,7 +199,7 @@ namespace GCloudiPhone
         {
             base.ViewWillAppear(animated);
 
-            NavigationItem.Title = "Unsere Filialen";
+            NavigationItem.Title = "Liste";
             UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
             {
                 Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)

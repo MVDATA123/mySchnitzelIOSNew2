@@ -45,6 +45,27 @@ namespace GCloudiPhone
             //TabBar.Items[1].Image = GetTabIcon(UITabBarSystemItem.Bookmarks);
 
             //View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            //UITabBarController tabViewController = (UITabBarController)this.TabBarController;
+
+            //UITabBar tb = MoreNavigationController.TabBarController.TabBar;
+            //if (tb.Subviews.Length > 4)
+            //{
+            //    UIView tbb = tb.Subviews[4];
+            //    UILabel label = (UILabel)tbb.Subviews[1];
+            //    label.Text = "Mehr2";
+            //}
+
+            //Change Title from More/Mehr to Auswahl
+            UINavigationBar moreNavigationBar = this.MoreNavigationController.NavigationBar;
+            moreNavigationBar.TopItem.Title = @"Auswahl";
+
+            //Remove Edit button from More Page
+            UINavigationItem moreNavItem = moreNavigationBar.TopItem;
+            moreNavItem.RightBarButtonItem.Title = "";
+            moreNavItem.RightBarButtonItem.Enabled = false;
+
+            //this.MoreNavigationController.NavigationBar.Hidden = true;
         }
 
         private UIImage GetTabIcon(UITabBarSystemItem systemItem)
