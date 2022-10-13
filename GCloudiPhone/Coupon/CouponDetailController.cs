@@ -35,8 +35,9 @@ namespace GCloudiPhone
 
         public override void ViewDidLoad()
         {
-            shareButton = new UIBarButtonItem(UIBarButtonSystemItem.Action, ShareEventHandler);
-            NavigationItem.RightBarButtonItem = shareButton;
+            //shareButton = new UIBarButtonItem(UIBarButtonSystemItem.Action, ShareEventHandler);
+            //NavigationItem.RightBarButtonItem = shareButton;
+            
 
             ShadowView.Layer.ShadowColor = UIColor.Black.CGColor;
             ShadowView.Layer.ShadowOffset = new CGSize(5.0d, 5.0d);

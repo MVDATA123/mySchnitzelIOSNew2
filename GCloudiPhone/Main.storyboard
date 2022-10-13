@@ -174,7 +174,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13818">
-                                <rect key="frame" x="294" y="91" width="100" height="100"/>
+                                <rect key="frame" x="294" y="129" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1477,7 +1477,7 @@
         <scene sceneID="54005">
             <objects>
                 <navigationController storyboardIdentifier="StoreMapViewNavigationController" extendedLayoutIncludesOpaqueBars="YES" id="54006" customClass="MapNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Karte" image="MapsIcon" selectedImage="MapsIconFilled" id="141285"/>
+                    <tabBarItem key="tabBarItem" title="Standorte" image="MapsIcon" selectedImage="MapsIconFilled" id="141285"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="54008">
                         <rect key="frame" x="0.0" y="20" width="414" height="50"/>
