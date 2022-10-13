@@ -38,6 +38,9 @@ namespace GCloudiPhone
         {
             base.ViewDidLoad();
 
+            //Dodato jer ukidamo tab bar
+            this.NavigationController.SetNavigationBarHidden(false, true);
+
             refreshControl = new UIRefreshControl
             {
                 BackgroundColor = UIColor.Clear

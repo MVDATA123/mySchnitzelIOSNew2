@@ -30,7 +30,11 @@ namespace GCloudiPhone
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            
+
+            //Dodato jer ukidamo tab bar
+            this.NavigationController.SetNavigationBarHidden(false, true);
+
+
             SettingsTable.SectionFooterHeight = 0.0f;
 
 

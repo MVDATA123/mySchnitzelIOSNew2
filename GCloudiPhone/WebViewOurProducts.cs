@@ -18,10 +18,21 @@ namespace GCloudiPhone
         {
             base.ViewDidLoad();
 
+            //Dodato jer ukidamo tab bar
+            this.NavigationController.SetNavigationBarHidden(false, true);
+
+
             var webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
             View.AddSubview(webView);
 
             webView.LoadRequest(new NSUrlRequest(url));
+        }
+
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            NavigationItem.Title = "Speisekarte";
         }
     }
 }

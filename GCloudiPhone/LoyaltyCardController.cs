@@ -90,7 +90,8 @@ namespace GCloudiPhone
             //Menjamo boju pozadine i navigation item
             View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
             //UINavigationBar.Appearance.BackgroundColor = UIColor.FromRGB(255, 205, 103);
-            //NavigationItem.Title = "";
+            NavigationItem.Title = "";
+
             this.NavigationController.SetNavigationBarHidden(true, true);
 
             //this.NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
@@ -100,6 +101,9 @@ namespace GCloudiPhone
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
+
+            NavigationItem.Title = "";
+            this.NavigationController.SetNavigationBarHidden(true, true);
 
             var user = _userRepository.GetCurrentUser();
             if (user != null)
@@ -202,8 +206,9 @@ namespace GCloudiPhone
         //Store list and store details
         partial void MapButton_TouchUpInside(UIButton sender)
         {
-            TabBarController.TabBar.Hidden = false;
-            ((TabBarController)TabBarController).ChangeSelectedItem(1);
+            //Zakomenntarisano jer ukidamo tab bar
+            //TabBarController.TabBar.Hidden = false;
+            //((TabBarController)TabBarController).ChangeSelectedItem(1);
         }
 
         public override void DidReceiveMemoryWarning()
@@ -215,8 +220,9 @@ namespace GCloudiPhone
         //Settings
         partial void ProfileButton_TouchUpInside(UIButton sender)
         {
-            TabBarController.TabBar.Hidden = false;
-            ((TabBarController)TabBarController).ChangeSelectedItem(3);
+            //Zakomenntarisano jer ukidamo tab bar
+            //TabBarController.TabBar.Hidden = false;
+            //((TabBarController)TabBarController).ChangeSelectedItem(3);
         }
 
         //partial void EBillButton_TouchUpInside(UIButton sender)
@@ -229,60 +235,65 @@ namespace GCloudiPhone
         //OurProducts web view
         partial void OpenOurProducts(UIButton sender)
         {
-            // Ako koristimo Safari, gde je back button automatski implementiran:
-            // UIApplication.SharedApplication.OpenUrl(urlOurProducts);
+            //Zakomenntarisano jer ukidamo tab bar
+            //// Ako koristimo Safari, gde je back button automatski implementiran:
+            //// UIApplication.SharedApplication.OpenUrl(urlOurProducts);
 
-            TabBarController.TabBar.Hidden = false;
-            // Automatski nas prebacuje na webViewSiteController
-            ((TabBarController)TabBarController).ChangeSelectedItem(2);
+            //TabBarController.TabBar.Hidden = false;
+            //// Automatski nas prebacuje na webViewSiteController
+            //((TabBarController)TabBarController).ChangeSelectedItem(2);
         }
 
         //Speisekarte
         partial void OpenOurMenu(UIButton sender)
         {
-            // Ako koristimo Safari, gde je back button automatski implementiran:
-            // UIApplication.SharedApplication.OpenUrl(urlOurMenu);
+            //Zakomenntarisano jer ukidamo tab bar
+            //// Ako koristimo Safari, gde je back button automatski implementiran:
+            //// UIApplication.SharedApplication.OpenUrl(urlOurMenu);
 
-            TabBarController.TabBar.Hidden = false;
-            // Automatski nas prebacuje na webViewOurProducts
-            ((TabBarController)TabBarController).ChangeSelectedItem(4);
+            //TabBarController.TabBar.Hidden = false;
+            //// Automatski nas prebacuje na webViewOurProducts
+            //((TabBarController)TabBarController).ChangeSelectedItem(4);
         }
 
         //Coupons - type 1,2,3
         partial void OpenAktionenTab(UIButton sender)
         {
-            // Ako koristimo Safari, gde je back button automatski implementiran:
-            // UIApplication.SharedApplication.OpenUrl(urlOurMenu);
+            //Zakomenntarisano jer ukidamo tab bar
+            //// Ako koristimo Safari, gde je back button automatski implementiran:
+            //// UIApplication.SharedApplication.OpenUrl(urlOurMenu);
 
-            TabBarController.TabBar.Hidden = false;
-            // Automatski nas prebacuje na webViewOurProducts
-            ((TabBarController)TabBarController).ChangeSelectedItem(5);
+            //TabBarController.TabBar.Hidden = false;
+            //// Automatski nas prebacuje na webViewOurProducts
+            //((TabBarController)TabBarController).ChangeSelectedItem(5);
         }
 
         //Coupons - type 4
         partial void OpenSpecialProductsTab(UIButton sender)
         {
-            // Ako koristimo Safari, gde je back button automatski implementiran:
-            // UIApplication.SharedApplication.OpenUrl(urlOurMenu);
+            //Zakomenntarisano jer ukidamo tab bar
+            //// Ako koristimo Safari, gde je back button automatski implementiran:
+            //// UIApplication.SharedApplication.OpenUrl(urlOurMenu);
 
-            TabBarController.TabBar.Hidden = false;
-            // Automatski nas prebacuje na webViewOurProducts
-            ((TabBarController)TabBarController).ChangeSelectedItem(6);
+            //TabBarController.TabBar.Hidden = false;
+            //// Automatski nas prebacuje na webViewOurProducts
+            //((TabBarController)TabBarController).ChangeSelectedItem(6);
         }
 
 
         //On line shop
         partial void OnlineShop(UIButton sender)
         {
-            // Ako koristimo Safari, gde je back button automatski implementiran:
-            // UIApplication.SharedApplication.OpenUrl(urlOurMenu);
+            //Zakomenntarisano jer ukidamo tab bar
+            //// Ako koristimo Safari, gde je back button automatski implementiran:
+            //// UIApplication.SharedApplication.OpenUrl(urlOurMenu);
 
-            TabBarController.TabBar.Hidden = false;
-            // Automatski nas prebacuje na webViewOurProducts
-            ((TabBarController)TabBarController).ChangeSelectedItem(7
-                );
+            //TabBarController.TabBar.Hidden = false;
+            //// Automatski nas prebacuje na webViewOurProducts
+            //((TabBarController)TabBarController).ChangeSelectedItem(7
+            //    );
         }
 
-      
+
     }
 }

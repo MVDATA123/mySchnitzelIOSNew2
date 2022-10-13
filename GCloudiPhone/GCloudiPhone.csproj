@@ -403,6 +403,10 @@
     <Compile Include="Cashback\RegisterTableViewController.designer.cs">
       <DependentUpon>RegisterTableViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="test.cs" />
+    <Compile Include="test.designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard">

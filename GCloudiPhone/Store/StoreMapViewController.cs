@@ -103,6 +103,10 @@ namespace GCloudiPhone
         {
             base.ViewDidLoad();
 
+            //Dodato jer ukidamo tab bar
+            this.NavigationController.SetNavigationBarHidden(false, true);
+
+
             couponTableRef = new WeakReference<UITableView>(StoreInfoCouponsTable);
             storeTableRef = new WeakReference<UITableView>(StoreTableView);
 
@@ -200,6 +204,9 @@ namespace GCloudiPhone
             base.ViewWillAppear(animated);
 
             NavigationItem.Title = "Liste";
+
+            //Dodato jer ukidamo tab bar
+            this.NavigationController.SetNavigationBarHidden(false, true);
             UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
             {
                 Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)

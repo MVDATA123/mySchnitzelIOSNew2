@@ -23,6 +23,7 @@
                                 <state key="normal" image="Standorte"/>
                                 <connections>
                                     <action selector="MapButton_TouchUpInside:" destination="9pv-A4-QxB" eventType="touchUpInside" id="79593"/>
+                                    <segue id="585157" destination="22255" kind="show"/>
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="276192">
@@ -61,12 +62,17 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WelcommeMessage" translatesAutoresizingMaskIntoConstraints="NO" id="463327">
+                                <rect key="frame" x="0.0" y="38" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78316">
                                 <rect key="frame" x="353" y="368" width="36" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="SettingsNew"/>
                                 <connections>
                                     <action selector="ProfileButton_TouchUpInside:" destination="9pv-A4-QxB" eventType="touchUpInside" id="237545"/>
+                                    <segue id="581167" destination="32107" kind="show"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id4-hO-Xlf">
@@ -92,6 +98,7 @@
                                 <state key="normal" image="Aktionen"/>
                                 <connections>
                                     <action selector="OpenAktionenTab:" destination="9pv-A4-QxB" eventType="touchUpInside" id="446238"/>
+                                    <segue id="577289" destination="434419" kind="show"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="446239">
@@ -100,6 +107,7 @@
                                 <state key="normal" image="OnlineBestellen"/>
                                 <connections>
                                     <action selector="OnlineShop:" destination="9pv-A4-QxB" eventType="touchUpInside" id="448101"/>
+                                    <segue id="583793" destination="490" kind="show"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="448102">
@@ -108,6 +116,7 @@
                                 <state key="normal" image="PunkteEinlosen"/>
                                 <connections>
                                     <action selector="OpenSpecialProductsTab:" destination="9pv-A4-QxB" eventType="touchUpInside" id="448109"/>
+                                    <segue id="579186" destination="44412" kind="show"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="448110">
@@ -116,6 +125,7 @@
                                 <state key="normal" image="Speisekarte"/>
                                 <connections>
                                     <action selector="OpenOurMenu:" destination="9pv-A4-QxB" eventType="touchUpInside" id="448116"/>
+                                    <segue id="588321" destination="328293" kind="show"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="448113">
@@ -124,6 +134,7 @@
                                 <state key="normal" image="Produkte"/>
                                 <connections>
                                     <action selector="OpenOurProducts:" destination="9pv-A4-QxB" eventType="touchUpInside" id="448117"/>
+                                    <segue id="589579" destination="323676" kind="show"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="456281">
@@ -140,10 +151,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WelcommeMessage" translatesAutoresizingMaskIntoConstraints="NO" id="463327">
-                                <rect key="frame" x="0.0" y="38" width="414" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hvg-5B-IRm"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -160,6 +167,7 @@
                         <outlet property="TotalPointsLabel" destination="456281" id="name-outlet-456281"/>
                         <outlet property="WelcommeMessage" destination="463327" id="name-outlet-463327"/>
                     </connections>
+                    <navigationItem title="Title" id="564944" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,11 +300,8 @@
                     <connections>
                         <segue destination="qGZ-8j-Kng" kind="relationship" relationship="viewControllers" id="41508"/>
                         <segue destination="54006" kind="relationship" relationship="viewControllers" id="141377"/>
-                        <segue destination="323676" kind="relationship" relationship="viewControllers" id="323680"/>
                         <segue destination="41638" kind="relationship" relationship="viewControllers" id="283770"/>
                         <segue destination="6298" kind="presentation" identifier="LoginSegue" id="85618"/>
-                        <segue destination="328293" kind="relationship" relationship="viewControllers" id="328297"/>
-                        <segue destination="428241" kind="relationship" relationship="viewControllers" id="428502"/>
                         <segue destination="438685" kind="relationship" relationship="viewControllers" id="438903"/>
                         <segue destination="440732" kind="relationship" relationship="viewControllers" id="441018"/>
                     </connections>
@@ -595,7 +600,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="496" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-62" y="1026"/>
+            <point key="canvasLocation" x="-497" y="783"/>
         </scene>
         <!--Login Navigation Controller-->
         <scene sceneID="6297">
@@ -907,9 +912,6 @@
                         <viewLayoutGuide key="safeArea" id="wIx-qn-v8x"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="131838">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="266378"/>
-                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="FindSegmentControl" destination="22383" id="name-outlet-22383"/>
@@ -1333,9 +1335,6 @@
                             <color key="textColor" systemColor="systemRedColor"/>
                         </textAttributes>
                     </navigationBar>
-                    <connections>
-                        <segue destination="32107" kind="relationship" relationship="rootViewController" id="41726"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41641" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1471,7 +1470,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47372" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71" y="179"/>
+            <point key="canvasLocation" x="-70" y="415"/>
         </scene>
         <!--Karte-->
         <scene sceneID="54005">
@@ -1490,9 +1489,6 @@
                             <color key="textColor" systemColor="systemRedColor"/>
                         </textAttributes>
                     </navigationBar>
-                    <connections>
-                        <segue destination="22255" kind="relationship" relationship="rootViewController" id="131839"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="54009" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3529,7 +3525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="323679" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1663" y="808"/>
+            <point key="canvasLocation" x="-1627" y="458"/>
         </scene>
         <!--Speisekarte-->
         <scene sceneID="328292">
@@ -3546,7 +3542,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="328296" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2161" y="804"/>
+            <point key="canvasLocation" x="-2899" y="-1201"/>
         </scene>
         <!--Aktionen-->
         <scene sceneID="358627">
@@ -3670,12 +3666,11 @@
                     </navigationBar>
                     <connections>
                         <outlet property="Aktionen" destination="428501" id="name-outlet-428501"/>
-                        <segue destination="434419" kind="relationship" relationship="rootViewController" id="434516"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="428244" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-596" y="660"/>
+            <point key="canvasLocation" x="528" y="-653"/>
         </scene>
         <!--Gutscheine-->
         <scene sceneID="434418">
@@ -3755,7 +3750,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="434441" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="728"/>
+            <point key="canvasLocation" x="1628" y="-456"/>
         </scene>
         <!--Punkte einlösen-->
         <scene sceneID="438684">
@@ -3767,9 +3762,6 @@
                         <rect key="frame" x="0.0" y="20" width="414" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="44412" kind="relationship" relationship="rootViewController" id="438789"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="438688" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3785,13 +3777,25 @@
                         <rect key="frame" x="0.0" y="20" width="414" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="490" kind="relationship" relationship="rootViewController" id="440792"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="440735" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1600" y="1664"/>
+        </scene>
+        <scene sceneID="564897">
+            <objects>
+                <navigationController id="564898" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="564900">
+                        <rect key="frame" x="0.0" y="20" width="414" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="564998" destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="564901" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-533" y="-1230"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -3802,7 +3806,6 @@
         <segue reference="65156"/>
         <segue reference="47466"/>
         <segue reference="107024"/>
-        <segue reference="440792"/>
         <segue reference="47285"/>
     </inferredMetricsTieBreakers>
     <resources>

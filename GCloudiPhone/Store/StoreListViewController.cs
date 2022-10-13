@@ -40,6 +40,8 @@ namespace GCloudiPhone
         {
             base.ViewDidLoad();
 
+            //Dodato jer ukidamo tab bar
+            this.NavigationController.SetNavigationBarHidden(false, true);
 
             //Sklanjamo linije izmedju redova u tabeli
             StoreList.SeparatorStyle = UITableViewCellSeparatorStyle.None;
