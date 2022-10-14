@@ -93,6 +93,10 @@ namespace GCloudiPhone
             NavigationItem.Title = "";
 
             this.NavigationController.SetNavigationBarHidden(true, true);
+            UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
+            {
+                Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
+            };
 
             //this.NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
             //this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
@@ -104,6 +108,10 @@ namespace GCloudiPhone
 
             NavigationItem.Title = "";
             this.NavigationController.SetNavigationBarHidden(true, true);
+            UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
+            {
+                Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
+            };
 
             var user = _userRepository.GetCurrentUser();
             if (user != null)

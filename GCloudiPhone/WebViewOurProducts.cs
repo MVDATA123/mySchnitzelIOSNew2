@@ -25,6 +25,11 @@ namespace GCloudiPhone
             var webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
             View.AddSubview(webView);
 
+            UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
+            {
+                Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
+            };
+
             webView.LoadRequest(new NSUrlRequest(url));
         }
 
@@ -33,6 +38,11 @@ namespace GCloudiPhone
             base.ViewWillAppear(animated);
 
             NavigationItem.Title = "Speisekarte";
+
+            UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
+            {
+                Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
+            };
         }
     }
 }

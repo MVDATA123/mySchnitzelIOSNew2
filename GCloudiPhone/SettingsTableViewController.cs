@@ -49,6 +49,10 @@ namespace GCloudiPhone
             this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(255, 205, 103);
 
             SettingsTable.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
+            {
+                Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
+            };
         }
 
         public override void ViewWillAppear(bool animated)

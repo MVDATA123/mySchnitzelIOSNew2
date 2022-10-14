@@ -197,6 +197,11 @@ namespace GCloudiPhone
 
             //StoreTableView.RemoveFromSuperview();
             StoreInfoView.RemoveFromSuperview();
+
+            UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
+            {
+                Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
+            };
         }
 
         public override void ViewWillAppear(bool animated)

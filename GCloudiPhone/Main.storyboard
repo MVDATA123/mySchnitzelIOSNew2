@@ -3816,7 +3816,7 @@
         <image name="FocusOnUserIcon" width="25" height="25"/>
         <image name="FollowIcon" width="25" height="25"/>
         <image name="FollowIconFilled" width="25" height="25"/>
-        <image name="Logo" width="1000" height="750"/>
+        <image name="Logo" width="218.5" height="79.5"/>
         <image name="LoyaltyCardIcon" width="25" height="25"/>
         <image name="LoyaltyCardIconFilled" width="25" height="25"/>
         <image name="MapsIcon" width="25" height="25"/>

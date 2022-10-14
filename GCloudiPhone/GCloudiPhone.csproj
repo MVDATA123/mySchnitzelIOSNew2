@@ -814,7 +814,6 @@
     <ImageAsset Include="Resources\Images.xcassets\eBillIcon.imageset\InvoiceIcon-75.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\Logo.imageset\passIconTwo.png" />
     <ImageAsset Include="Resources\Images.xcassets\MapsIconFilledTall.imageset\icons8_marker3.png" />
     <ImageAsset Include="Resources\Images.xcassets\Dashboard-Image-1.imageset\Dashboard-Image-1.jpg" />
     <ImageAsset Include="Resources\Images.xcassets\Dashboard-Image-2.imageset\Dashboard-Image-2.jpg" />
@@ -858,6 +857,8 @@
     <ImageAsset Include="Images.xcassets\SettingsNew.imageset\sett.png" />
     <ImageAsset Include="Images.xcassets\StartUp.imageset\Contents.json" />
     <ImageAsset Include="Images.xcassets\StartUp.imageset\MySchnitzelLogo.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Logo.imageset\MySchnitzelLogo.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Logo.imageset\MySchnitzelLogo-1.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GCloud.Shared\GCloud.Shared.csproj">

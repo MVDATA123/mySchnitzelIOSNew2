@@ -84,6 +84,7 @@ namespace GCloudiPhone
             loading = new LoadingOverlay(TableView.Frame);
             StoreList.AddSubview(RefreshControl);
             StoreList.TableFooterView = new UIView(new CGRect(0, 0, 0, 0));
+
         }
 
         void RefreshControl_ValueChanged(object sender, EventArgs e)
