@@ -90,7 +90,7 @@ namespace GCloudiPhone
             //Menjamo boju pozadine i navigation item
             View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
             //UINavigationBar.Appearance.BackgroundColor = UIColor.FromRGB(255, 205, 103);
-            NavigationItem.Title = "";
+            NavigationItem.Title = "Startseite";
 
             this.NavigationController.SetNavigationBarHidden(true, true);
             UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
@@ -106,7 +106,7 @@ namespace GCloudiPhone
         {
             base.ViewWillAppear(animated);
 
-            NavigationItem.Title = "";
+            NavigationItem.Title = "Startseite";
             this.NavigationController.SetNavigationBarHidden(true, true);
             UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
             {
