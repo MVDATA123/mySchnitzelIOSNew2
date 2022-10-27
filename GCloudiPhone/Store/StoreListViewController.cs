@@ -36,6 +36,8 @@ namespace GCloudiPhone
             loginBtn = new UIBarButtonItem(UIImage.FromBundle("LoginIcon"), UIBarButtonItemStyle.Plain, (sender, e) => TabBarController.PerformSegue("LoginSegue", this));
         }
 
+        //Lista prodavnica za online kupovinu
+
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
