@@ -64,23 +64,23 @@ namespace GCloudiPhone
             //StoreList.RowHeight = 75;
    
 
-            search = new ColoredUISearchController(searchResultsController: null)
-            {
-                DimsBackgroundDuringPresentation = false
-            };
-            search.SearchResultsUpdater = this;
-            search.SearchBar.Placeholder = "Nach Kategorien durchsuchen";
-            if (UIDevice.CurrentDevice.CheckSystemVersion(11, 0))
-            {
-                NavigationItem.SearchController = search;
-                NavigationItem.HidesSearchBarWhenScrolling = true;
-            }
-            else
-            {
-                search.SearchBar.SearchBarStyle = UISearchBarStyle.Default;
-                search.SearchBar.SizeToFit();
-                StoreList.TableHeaderView = search.SearchBar;
-            }
+            //search = new ColoredUISearchController(searchResultsController: null)
+            //{
+            //    DimsBackgroundDuringPresentation = false
+            //};
+            //search.SearchResultsUpdater = this;
+            //search.SearchBar.Placeholder = "Nach Kategorien durchsuchen";
+            //if (UIDevice.CurrentDevice.CheckSystemVersion(11, 0))
+            //{
+            //    NavigationItem.SearchController = search;
+            //    NavigationItem.HidesSearchBarWhenScrolling = true;
+            //}
+            //else
+            //{
+            //    search.SearchBar.SearchBarStyle = UISearchBarStyle.Default;
+            //    search.SearchBar.SizeToFit();
+            //    StoreList.TableHeaderView = search.SearchBar;
+            //}
 
             RefreshControl = new UIRefreshControl();
             loading = new LoadingOverlay(TableView.Frame);
@@ -231,7 +231,7 @@ namespace GCloudiPhone
             var query = searchController.SearchBar.Text;
             if (!string.IsNullOrWhiteSpace(query))
             {
-                SearchStoresByTags(query);
+               // SearchStoresByTags(query);
             }
             else
             {

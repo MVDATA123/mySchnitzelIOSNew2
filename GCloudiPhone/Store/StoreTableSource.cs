@@ -67,26 +67,30 @@ namespace GCloudiPhone
             return TableItems.Count;
         }
 
-        public override void CommitEditingStyle(UITableView tableView, UITableViewCellEditingStyle editingStyle, NSIndexPath indexPath)
-        {
-            switch (editingStyle)
-            {
-                case UITableViewCellEditingStyle.Delete:
-                    var store = TableItems[indexPath.Row];
-                    TableItems.RemoveAt(indexPath.Row);
-                    tableView.DeleteRows(new NSIndexPath[] { indexPath }, UITableViewRowAnimation.Fade);
-                    // UnSub Notifications
-                    DeleteFromWatchlist(store.Id);
-                    break;
-                case UITableViewCellEditingStyle.None:
-                    break;
-            }
-        }
 
-        public override string TitleForDeleteConfirmation(UITableView tableView, NSIndexPath indexPath)
-        {
-            return "Entfernen";
-        }
+        //https://learn.microsoft.com/en-us/xamarin/ios/user-interface/controls/tables/editing
+        //Zakomentarisano jer ne zelimo da se radnje brisu povlacenjem na levo
+
+        //public override void CommitEditingStyle(UITableView tableView, UITableViewCellEditingStyle editingStyle, NSIndexPath indexPath)
+        //{
+        //    switch (editingStyle)
+        //    {
+        //        case UITableViewCellEditingStyle.Delete:
+        //            var store = TableItems[indexPath.Row];
+        //            TableItems.RemoveAt(indexPath.Row);
+        //            tableView.DeleteRows(new NSIndexPath[] { indexPath }, UITableViewRowAnimation.Fade);
+        //            // UnSub Notifications
+        //            DeleteFromWatchlist(store.Id);
+        //            break;
+        //        case UITableViewCellEditingStyle.None:
+        //            break;
+        //    }
+        //}
+
+        //public override string TitleForDeleteConfirmation(UITableView tableView, NSIndexPath indexPath)
+        //{
+        //    return "Entfernen";
+        //}
 
         public override bool CanEditRow(UITableView tableView, NSIndexPath indexPath)
         {
