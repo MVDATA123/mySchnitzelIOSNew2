@@ -53,6 +53,7 @@ namespace GCloudiPhone
 
             var storeName = Store.Name;
             var webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
+            //webView.ScrollView.ScrollEnabled = false;
             View.AddSubview(webView);
 
             if (storeName == "Eisenstadt")

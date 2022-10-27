@@ -46,10 +46,6 @@ namespace GCloudiPhone
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField UsernameText { get; set; }
 
-        [Action ("CancelButton_Activated:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void CancelButton_Activated (UIKit.UIBarButtonItem sender);
-
         [Action ("LoginButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void LoginButton_TouchUpInside (UIKit.UIButton sender);

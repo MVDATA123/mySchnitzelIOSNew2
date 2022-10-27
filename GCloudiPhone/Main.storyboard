@@ -510,10 +510,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6354">
-                        <barButtonItem key="leftBarButtonItem" title="Abbrechen" id="114020">
-                            <connections>
-                                <action selector="CancelButton_Activated:" destination="245" id="114021"/>
-                            </connections>
+                        <barButtonItem key="leftBarButtonItem" id="114020">
+                            <connections/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

@@ -292,10 +292,10 @@ namespace GCloudiPhone
             }
         }
 
-        partial void CancelButton_Activated(UIBarButtonItem sender)
-        {
-            DismissViewController(true, null);
-        }
+        //partial void CancelButton_Activated(UIBarButtonItem sender)
+        //{
+        //    DismissViewController(true, null);
+        //}
 
 
 

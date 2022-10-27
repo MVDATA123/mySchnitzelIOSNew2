@@ -63,7 +63,7 @@ namespace GCloudiPhone
             StoreList.Source = tableSource;
             //StoreList.RowHeight = 75;
    
-
+            //Remove serach bar
             //search = new ColoredUISearchController(searchResultsController: null)
             //{
             //    DimsBackgroundDuringPresentation = false
