@@ -3642,8 +3642,8 @@
         <!--Web Shop View Controller-->
         <scene sceneID="386584">
             <objects>
-                <viewController id="386585" customClass="WebShopViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="386586">
+                <viewController id="386585" customClass="WebShopViewController" sceneMemberID="viewController" extendedLayoutIncludesOpaqueBars="YES">
+                    <view key="view" contentMode="scaleAspectFit" id="386586">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="386583"/>
