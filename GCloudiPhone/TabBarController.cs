@@ -84,20 +84,20 @@ namespace GCloudiPhone
             await _authService.Logout(_mobilePhoneRepository.FirstOrDefault()?.MobilePhoneId);
 
             _userRepository.DeleteAll();
-            _mobilePhoneRepository.DeleteAll();
+            //_mobilePhoneRepository.DeleteAll();
 
-            //Not sure if Logout method does this anyways
-            if (File.Exists(KundenkartePath))
-            {
-                File.Delete(KundenkartePath);
-            }
+            ////Not sure if Logout method does this anyways
+            //if (File.Exists(KundenkartePath))
+            //{
+            //    File.Delete(KundenkartePath);
+            //}
 
-            if (CacheHolder.Instance.LoyaltyCard != null)
-            {
-                CacheHolder.Instance.LoyaltyCard.Dispose();
-                CacheHolder.Instance.LoyaltyCard = null;
-            }
-            CachingService.ClearCachedImages();
+            //if (CacheHolder.Instance.LoyaltyCard != null)
+            //{
+            //    CacheHolder.Instance.LoyaltyCard.Dispose();
+            //    CacheHolder.Instance.LoyaltyCard = null;
+            //}
+            //CachingService.ClearCachedImages();
 
             //((AppDelegate)UIApplication.SharedApplication.Delegate).IsLoggedIn = false;
             ((AppDelegate)UIApplication.SharedApplication.Delegate).AuthState = AuthState.Unauthorized;
